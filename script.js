@@ -1,7 +1,11 @@
 function validateArr(el) {
     el = parseInt(el);
-    return Number.isInteger(el);
-}
+    if (Number.isInteger(el)) {
+    	return true;
+  	} else {
+    	return false;
+  		}
+	}
 
 function validatePairs(el, arr) {
     if (el.length > 3) {
